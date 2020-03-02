@@ -7,7 +7,7 @@
 
 [Service Worker：简介  |  Web Fundamentals  |  Google Developers](https://developers.google.com/web/fundamentals/primers/service-workers?hl=zh-cn)
 ___
-![](/../assets/images/service-worker-frame.png)
+![](./assets/images/service-worker-frame.png)
 
 ---
 
@@ -88,7 +88,7 @@ self.addEventListener('fetch', function(event) {
 ---
 
 ### 生命周期
-![](../assets/images/service-worker-lifecycle.png)
+![](./assets/images/service-worker-lifecycle.png)
 ___
 #### install
 适合做 precache
@@ -124,18 +124,18 @@ activate 是指 service-worker 完成了安装过程。开始激活，激活后�
 ___
 1. 没有安装过
    
-![](../assets/images/service-worker-install.gif)
+![](./assets/images/service-worker-install.gif)
 ___
 1. 安装过
    
-![](../assets/images/service-worker-activate.gif)
+![](./assets/images/service-worker-activate.gif)
 ___
 当目前已经 install 了一个 service-worker，我们更新了service-worker 内容时，聪明的浏览器会比对出内容的变化，并且 install 一个新的 service-worker。
 然后新的 service-worker 等待老的 service-worker redundant（用户关闭或者刷新页面）。新的 service-worker 便开始工作。
 ___
 下图是调试在浏览器会出现以下情况，新的 service-worker  "waiting" 老的 service-worker  交接工作。
 ___
-![](../assets/images/chrome-devtool-skipWaiting.png)
+![](./assets/images/chrome-devtool-skipWaiting.png)
 如果我们想新的 service-worker install 后直接开始工作不等待老的 service-worker 怎么办？
 ___
 下面代码中 "self.skipWaiting()" 的作用是让新的 service-worker 跳过等待直接接管工作。
@@ -176,21 +176,21 @@ ___
 
 Stale-While-Revalidate
 
-<img class="strategies" data-src="../assets/images/workbox-logo.svg" data-placeholder-src="../assets/images/workbox-logo.svg" data-test-src="./assets/images/workbox-stale-while-revalidate.png"/>
+<img class="strategies" data-src="./assets/images/workbox-logo.svg" data-placeholder-src="../assets/images/workbox-logo.svg" data-test-src="./assets/images/workbox-stale-while-revalidate.png"/>
 
 ___
 Cache First
 
-<img class="strategies" data-src="../assets/images/workbox-logo.svg" data-placeholder-src="../assets/images/workbox-logo.svg" data-test-src="./assets/images/workbox-cache-first.png"/>
+<img class="strategies" data-src="./assets/images/workbox-logo.svg" data-placeholder-src="./assets/images/workbox-logo.svg" data-test-src="./assets/images/workbox-cache-first.png"/>
 ___
 Network First
 
-<img class="strategies" data-src="../assets/images/workbox-logo.svg" data-placeholder-src="../assets/images/workbox-logo.svg" data-test-src="./assets/images/workbox-network-first.png"/>
+<img class="strategies" data-src="./assets/images/workbox-logo.svg" data-placeholder-src="./assets/images/workbox-logo.svg" data-test-src="./assets/images/workbox-network-first.png"/>
 ___
 Network Only
 
-<img class="strategies" data-src="../assets/images/workbox-logo.svg" data-placeholder-src="../assets/images/workbox-logo.svg" data-test-src="./assets/images/workbox-network-only.png"/>
+<img class="strategies" data-src="./assets/images/workbox-logo.svg" data-placeholder-src="./assets/images/workbox-logo.svg" data-test-src="./assets/images/workbox-network-only.png"/>
 ___
 Cache Only
 
-<img class="strategies" data-src="../assets/images/workbox-logo.svg" data-placeholder-src="../assets/images/workbox-logo.svg" data-test-src="./assets/images/workbox-cache-only.png"/>
+<img class="strategies" data-src="./assets/images/workbox-logo.svg" data-placeholder-src="./assets/images/workbox-logo.svg" data-test-src="./assets/images/workbox-cache-only.png"/>
