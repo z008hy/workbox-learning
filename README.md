@@ -1,4 +1,4 @@
-# service-worker 和 workbox 的学习总结与demo
+# service-worker 和 workbox5 的学习总结与demo
 
 ### 启动
 

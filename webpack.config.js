@@ -43,6 +43,7 @@ module.exports = {
     // }),
     new WorkboxPlugin.InjectManifest({
       swSrc: './src/service-worker.js',
+      maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
     })
   ],
   module: {

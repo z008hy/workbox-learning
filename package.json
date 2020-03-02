@@ -1,7 +1,7 @@
 {
   "name": "workbox-learning",
   "version": "1.0.0",
-  "description": "service-worker & workbox learning",
+  "description": "service-worker & workbox5 learning",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --color",

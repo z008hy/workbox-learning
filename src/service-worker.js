@@ -1,12 +1,24 @@
-import {skipWaiting, clientsClaim} from 'workbox-core';
+import {skipWaiting, clientsClaim, setCacheNameDetails} from 'workbox-core';
 import {precacheAndRoute} from 'workbox-precaching';
 import {registerRoute} from 'workbox-routing';
 import {StaleWhileRevalidate, CacheFirst, NetworkFirst, NetworkOnly, CacheOnly} from 'workbox-strategies';
+import { CacheableResponsePlugin } from 'workbox-cacheable-response';
 
+setCacheNameDetails({
+  prefix: 'learning',
+  suffix: 'v1',
+  precache: 'precache',
+  runtime: 'runtime'
+})
 skipWaiting();
 clientsClaim();
 
 precacheAndRoute(self.__WB_MANIFEST);
+
+registerRoute(
+  new RegExp(/(\/|\.html)$/),
+  new NetworkFirst()
+);
 
 registerRoute(
   new RegExp('/assets/images/workbox-stale-while-revalidate.png'),
