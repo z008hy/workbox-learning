@@ -4,9 +4,10 @@
   "description": "service-worker & workbox5 learning",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --color",
+    "dev": "webpack-dev-server --color --config webpack.dev.js",
+    "build": "webpack --progress --colors --config webpack.prod.js",
     "serve": "http-server ./dist -o",
-    "build": "webpack --progress --colors"
+    "mock": "./node_modules/.bin/mock-boy run"
   },
   "author": "",
   "license": "ISC",
@@ -18,17 +19,22 @@
     "html-webpack-plugin": "^3.2.0",
     "http-server": "^0.12.1",
     "mini-css-extract-plugin": "^0.9.0",
+    "mock-boy": "^1.0.3",
     "style-loader": "^1.1.3",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2",
+    "workbox-expiration": "^5.0.0",
     "workbox-webpack-plugin": "^5.0.0"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "reveal.js": "^3.9.2",
     "workbox-core": "^5.0.0",
     "workbox-precaching": "^5.0.0",
     "workbox-routing": "^5.0.0",
-    "workbox-strategies": "^5.0.0"
+    "workbox-strategies": "^5.0.0",
+    "workbox-window": "^5.0.0"
   }
 }

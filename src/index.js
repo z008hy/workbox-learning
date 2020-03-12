@@ -1,11 +1,15 @@
 import './reveal/css/reset.css';
 import './reveal/css/reveal.css';
-import './reveal/css/theme/black.css';
+import './reveal/css/theme/white.css';
 import './styles/index.css';
 import Reveal from './reveal/js/reveal';
+import {Workbox} from 'workbox-window';
+import axios from 'axios';
 
 window.Reveal = Reveal;
 window.Reveal.initialize({
+  width: '69%',
+  height: '80%',
   // 是否在右下角展示控制条
   controls: true,
   // 是否显示演示的进度条
@@ -67,15 +71,8 @@ window.Reveal.initialize({
 });
 
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register(
-      '/service-worker.js'
-    ).then((registration) => {
-      console.log(registration);
-    }).catch((registrationError) => {
-      console.error(registrationError);
-    })
-  });
+  const wb = new Workbox('/service-worker.js');
+  wb.register();
 }
 
 function addEvent() {
@@ -90,6 +87,11 @@ function addEvent() {
       } else {
         target.setAttribute('src', loadSrc);
       }
+    }
+    if (target.tagName === 'A' && target.hasAttribute('data-request')) {
+      axios.get(target.getAttribute('data-request')).then((res) => {
+        if (res.data) console.log(JSON.stringify(res.data))
+      }); 
     }
   });
 }

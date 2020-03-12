@@ -1,0 +1,408 @@
+[2020-03-10T21:01:37.297] [INFO] default - *********************************************************************
+[2020-03-10T21:01:37.303] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://127.0.0.1:8080",
+    "pragma": "no-cache",
+    "referer": "http://127.0.0.1:8080/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/network-first-random",
+}
+[2020-03-10T21:01:37.303] [INFO] default - Request Body Object {}
+[2020-03-10T21:01:37.304] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://127.0.0.1:8080",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:01:37.304] [INFO] default - Response Body Object {
+  "random": "500000201602247246",
+  "type": "network-first-random",
+}
+[2020-03-10T21:01:54.190] [INFO] default - *********************************************************************
+[2020-03-10T21:01:54.191] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://127.0.0.1:8080",
+    "pragma": "no-cache",
+    "referer": "http://127.0.0.1:8080/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/cache-first-random",
+}
+[2020-03-10T21:01:54.191] [INFO] default - Request Body Object {}
+[2020-03-10T21:01:54.191] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://127.0.0.1:8080",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:01:54.191] [INFO] default - Response Body Object {
+  "random": "120000201106037468",
+  "type": "cache-first",
+}
+[2020-03-10T21:02:04.482] [INFO] default - *********************************************************************
+[2020-03-10T21:02:04.482] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://127.0.0.1:8080",
+    "pragma": "no-cache",
+    "referer": "http://127.0.0.1:8080/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/stale-while-revalidate-random",
+}
+[2020-03-10T21:02:04.482] [INFO] default - Request Body Object {}
+[2020-03-10T21:02:04.482] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://127.0.0.1:8080",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:02:04.482] [INFO] default - Response Body Object {
+  "random": "530000199607096761",
+  "type": "stale-while-revalidate",
+}
+[2020-03-10T21:02:49.347] [INFO] default - *********************************************************************
+[2020-03-10T21:02:49.348] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://127.0.0.1:8080",
+    "pragma": "no-cache",
+    "referer": "http://127.0.0.1:8080/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/stale-while-revalidate-random",
+}
+[2020-03-10T21:02:49.348] [INFO] default - Request Body Object {}
+[2020-03-10T21:02:49.348] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://127.0.0.1:8080",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:02:49.348] [INFO] default - Response Body Object {
+  "random": "310000198402075195",
+  "type": "stale-while-revalidate",
+}
+[2020-03-10T21:03:17.500] [INFO] default - *********************************************************************
+[2020-03-10T21:03:17.500] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://127.0.0.1:8080",
+    "pragma": "no-cache",
+    "referer": "http://127.0.0.1:8080/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/network-first-random",
+}
+[2020-03-10T21:03:17.500] [INFO] default - Request Body Object {}
+[2020-03-10T21:03:17.500] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://127.0.0.1:8080",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:03:17.500] [INFO] default - Response Body Object {
+  "random": "820000198308271405",
+  "type": "network-first-random",
+}
+[2020-03-10T21:03:27.541] [INFO] default - *********************************************************************
+[2020-03-10T21:03:27.541] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://127.0.0.1:8080",
+    "pragma": "no-cache",
+    "referer": "http://127.0.0.1:8080/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/network-only-random",
+}
+[2020-03-10T21:03:27.541] [INFO] default - Request Body Object {}
+[2020-03-10T21:03:27.541] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://127.0.0.1:8080",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:03:27.541] [INFO] default - Response Body Object {
+  "random": "620000199206214749",
+  "type": "network-only",
+}
+[2020-03-10T21:08:58.495] [INFO] default - *********************************************************************
+[2020-03-10T21:08:58.495] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://localhost:9000",
+    "pragma": "no-cache",
+    "referer": "http://localhost:9000/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/stale-while-revalidate-random",
+}
+[2020-03-10T21:08:58.496] [INFO] default - Request Body Object {}
+[2020-03-10T21:08:58.496] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://localhost:9000",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:08:58.496] [INFO] default - Response Body Object {
+  "random": "46000020021213867X",
+  "type": "stale-while-revalidate",
+}
+[2020-03-10T21:27:23.522] [INFO] default - *********************************************************************
+[2020-03-10T21:27:23.522] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://127.0.0.1:8080",
+    "pragma": "no-cache",
+    "referer": "http://127.0.0.1:8080/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/stale-while-revalidate-random",
+}
+[2020-03-10T21:27:23.522] [INFO] default - Request Body Object {}
+[2020-03-10T21:27:23.522] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://127.0.0.1:8080",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:27:23.522] [INFO] default - Response Body Object {
+  "random": "340000200901021373",
+  "type": "stale-while-revalidate",
+}
+[2020-03-10T21:27:38.549] [INFO] default - *********************************************************************
+[2020-03-10T21:27:38.550] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://127.0.0.1:8080",
+    "pragma": "no-cache",
+    "referer": "http://127.0.0.1:8080/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/stale-while-revalidate-random",
+}
+[2020-03-10T21:27:38.551] [INFO] default - Request Body Object {}
+[2020-03-10T21:27:38.551] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://127.0.0.1:8080",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:27:38.551] [INFO] default - Response Body Object {
+  "random": "210000197207176646",
+  "type": "stale-while-revalidate",
+}
+[2020-03-10T21:28:00.456] [INFO] default - *********************************************************************
+[2020-03-10T21:28:00.456] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://127.0.0.1:8080",
+    "pragma": "no-cache",
+    "referer": "http://127.0.0.1:8080/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/cache-first-random",
+}
+[2020-03-10T21:28:00.457] [INFO] default - Request Body Object {}
+[2020-03-10T21:28:00.457] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://127.0.0.1:8080",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:28:00.457] [INFO] default - Response Body Object {
+  "random": "340000199101295637",
+  "type": "cache-first",
+}
+[2020-03-10T21:29:04.832] [INFO] default - *********************************************************************
+[2020-03-10T21:29:04.834] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://127.0.0.1:8080",
+    "pragma": "no-cache",
+    "referer": "http://127.0.0.1:8080/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/network-first-random",
+}
+[2020-03-10T21:29:04.834] [INFO] default - Request Body Object {}
+[2020-03-10T21:29:04.834] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://127.0.0.1:8080",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:29:04.834] [INFO] default - Response Body Object {
+  "random": "430000201308074219",
+  "type": "network-first-random",
+}
+[2020-03-10T21:29:12.825] [INFO] default - *********************************************************************
+[2020-03-10T21:29:12.825] [INFO] default - Request Object {
+  "header": Object {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cache-control": "no-cache",
+    "connection": "keep-alive",
+    "host": "localhost:9999",
+    "origin": "http://127.0.0.1:8080",
+    "pragma": "no-cache",
+    "referer": "http://127.0.0.1:8080/",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+  },
+  "method": "GET",
+  "url": "/network-only-random",
+}
+[2020-03-10T21:29:12.825] [INFO] default - Request Body Object {}
+[2020-03-10T21:29:12.825] [INFO] default - Response Object {
+  "header": Object {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "http://127.0.0.1:8080",
+    "content-type": "application/json; charset=utf-8",
+    "vary": "Origin",
+  },
+  "message": "OK",
+  "status": 200,
+}
+[2020-03-10T21:29:12.825] [INFO] default - Response Body Object {
+  "random": "510000197003087925",
+  "type": "network-only",
+}

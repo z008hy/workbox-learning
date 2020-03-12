@@ -2,5 +2,22 @@
   text-transform: none;
 }
 .strategies {
-  height: 500px;
+  height: 360px;
+}
+a {
+  cursor: pointer;
+}
+.reveal pre{
+  font-size: 0.38em;
+}
+.reveal h3{
+  color: #53c0dd;
+}
+.reveal img{
+  max-width: 66%;
+}
+.reveal .content{
+  font-size: 0.76em;
+  text-align: left;
+  word-break: keep-all;
 }
