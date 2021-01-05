@@ -29,7 +29,7 @@
     "workbox-webpack-plugin": "^5.0.0"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "reveal.js": "^3.9.2",
     "workbox-core": "^5.0.0",
     "workbox-precaching": "^5.0.0",
